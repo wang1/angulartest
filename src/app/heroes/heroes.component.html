@@ -1,0 +1,15 @@
+<h2>My Heroes</h2>
+<ul class="heroes">
+  <!-- <li *ngFor="let hero of heroes"
+       routerLink="/heroDetail/{{hero.id}}"
+       [style.color]="hero === selectedHero?'red':''"
+       >
+    <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </li> -->
+  <li *ngFor="let hero of heroes">
+    <a routerLink="/heroDetail/{{hero.id}}">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
+  </li>
+</ul>
+
